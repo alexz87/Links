@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    background: #545252FF;
+}
+
+#error {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    background: #545252FF;
+}
+
+#content {
+    min-height:100%;
+}
+
+img {max-width: 100%}
+
+a {
+    color: #ff5644;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+a:hover {
+    color: #1cbd3c;
+    transition: all 0.6s ease;
+}
+
+.container {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+}
+
+@media(max-width: 900px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+}
+
+header {
+    font-family: times new roman, serif;
+} 
+
+header > .top-menu {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+header > .top-menu > .nav img {
+    color: #333;
+}
+
+header > .top-menu > .nav a {
+    align-items: center;
+    color: #333;
+    margin-right: 10px;
+}
+
+header > .top-menu > .nav a:hover {
+    color: #c13eec;
+}
+
+header > .top-menu > .nav a:not(:last-of-type)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #fff;
+}
+
+header > .middle {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    background: #333;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    /* margin-left: 10px; */
+    color: #fff;
+    cursor: pointer;
+    transition: all 600ms ease;
+}
+
+header .btn.auth {
+    width: 100px;
+    background: #ff5644;
+}
+
+header .btn.basket {
+    width: 95%;
+    background: #fff;
+    color: #333;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+}
+
+.btn:hover {
+    transition: all 600ms ease;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.3);
+}
+
+footer {
+    font-family: times new roman, times, serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer > .social > i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 30%;
+    background: #333;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: transform 600ms ease;
+    color: #fff;
+}
+
+footer > .social > i:hover {
+    transition: transform 600ms ease;
+    transform: translateY(-5px);
+}
